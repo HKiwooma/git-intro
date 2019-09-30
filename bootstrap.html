@@ -15,7 +15,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <a class="navbar-brand" href="#">Refactory </a>
       <button
         class="navbar-toggler"
@@ -81,53 +81,88 @@
         </form>
       </div>
     </nav>
-    <div class="container">
-      <!-- Content here -->
-      <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
-        </p>
-        <hr class="my-4" />
-        <p>
-          It uses utility classes for typography and spacing to space content out
-          within the larger container.
-        </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="container-fluid my-5">
+      <div class="row justify-content-start">
+        <div class="col-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-9">
+          <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">
+              This is a simple hero unit, a simple jumbotron-style component for
+              calling extra attention to featured content or information.
+            </p>
+            <hr class="my-4" />
+            <p>
+              It uses utility classes for typography and spacing to space
+              content out within the larger container.
+            </p>
+            <a class="btn btn-primary btn-lg" href="#" role="button"
+              >Learn more</a
+            >
+          </div>
+        </div>
       </div>
     </div>
+    <div class="container">
+      <table class="table table-hover table-bordered">
+        <thead class="table-grey">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>22</td>
+          </tr>
+        </tbody>
+      </table>
 
-    
-    <table class="table table-hover table-bordered">
-      <thead class="table-grey">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Age</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>45</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>30</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>22</td>
-        </tr>
-      </tbody>
-    </table>
+      <h1>Welcome</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione ut
+        iste consectetur maxime aperiam molestiae veritatis voluptatibus
+        nesciunt in dicta? Necessitatibus odit magnam iure, quibusdam quo atque
+        ducimus harum corporis?
+      </p>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
