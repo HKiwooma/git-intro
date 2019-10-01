@@ -2,3 +2,9 @@
   color: #ffffff;
   background-color: #343a40;
 }
+#Navty{
+  float: right;
+}
+.bg-dark{
+  background-color: blue;
+}
